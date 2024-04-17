@@ -39,6 +39,7 @@ public class ZipCodeQueryService {
         if (response.getStatusCode().isError()) {
             throw new HttpClientErrorException(response.getStatusCode());
         }
+
         return response.getBody();
     }
 }
