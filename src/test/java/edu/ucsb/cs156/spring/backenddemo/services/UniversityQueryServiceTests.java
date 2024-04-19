@@ -11,12 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-import java.nio.charset.StandardCharsets;
-
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.header;
-
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 
 @RestClientTest(UniversityQueryService.class)
 public class UniversityQueryServiceTests {
@@ -30,10 +25,9 @@ public class UniversityQueryServiceTests {
     @Test
     public void test_getJSON() throws Exception {
 
-        String name = "University of Florida";
-        String encodedName = URLEncoder.encode(name, StandardCharsets.UTF_8.toString()).replace("+", "%20");
+        String name = "Harvard";
         
-        String expectedURL = UniversityQueryService.ENDPOINT.replace("{name}", encodedName);
+        String expectedURL = UniversityQueryService.ENDPOINT.replace("{name}", name);
 
         String fakeJsonResult = "{ \"fake\" : \"result\" }";
 
