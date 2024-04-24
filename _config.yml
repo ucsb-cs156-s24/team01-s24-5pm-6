@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-s24/team01-s24-5pm-6
 owner: ucsb-cs156-s24
 repo_name: team01-s24-5pm-6
-pull_requests: [{"author":{"id":"MDQ6VXNlcjcyNzc3NTIz","is_bot":false,"login":"diyaparm","name":""},"headRefName":"Diya-HomeController","number":27,"title":"home controller update","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-6/pull/27"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjMxNTU0NTUw","is_bot":false,"login":"andyinnie","name":"Andrew Martinez"},"headRefName":"Liz-READMEFixes","number":30,"title":"update the readme","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-6/pull/30"},{"author":{"id":"MDQ6VXNlcjcyNzc3NTIz","is_bot":false,"login":"diyaparm","name":""},"headRefName":"Diya-HomeController","number":27,"title":"home controller update","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-6/pull/27"}]
