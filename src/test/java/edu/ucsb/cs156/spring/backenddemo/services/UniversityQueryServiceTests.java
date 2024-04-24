@@ -11,8 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-import java.nio.charset.StandardCharsets;
-
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.header;
 
 @RestClientTest(UniversityQueryService.class)
