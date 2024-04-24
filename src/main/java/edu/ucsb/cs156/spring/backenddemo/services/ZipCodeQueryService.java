@@ -36,10 +36,6 @@ public class ZipCodeQueryService {
                 ENDPOINT, HttpMethod.GET, entity, String.class, uriVariables
         );
 
-        if (response.getStatusCode().isError()) {
-            throw new HttpClientErrorException(response.getStatusCode());
-        }
-
         return response.getBody();
     }
 }
