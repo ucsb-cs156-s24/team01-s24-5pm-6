@@ -36,11 +36,7 @@ public class ZipCodeQueryService {
                 ENDPOINT, HttpMethod.GET, entity, String.class, uriVariables
         );
 
-<span class="pc bpc" id="L39" title="1 of 2 branches missed.">        if (response.getStatusCode().isError()) {</span>
-<span class="nc" id="L40">            throw new HttpClientErrorException(response.getStatusCode());</span>
-        }
-
-<span class="fc" id="L43">        return response.getBody();</span>
+<span class="fc" id="L39">        return response.getBody();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
