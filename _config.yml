@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-s24/team01-s24-5pm-6
 owner: ucsb-cs156-s24
 repo_name: team01-s24-5pm-6
-pull_requests: [{"author":{"id":"U_kgDOBXuxuA","is_bot":false,"login":"amisra0","name":""},"headRefName":"AnikaLocationQueryController","number":33,"title":"Added the controller and the tests for location service","url":"https://github.com/ucsb-cs156-s24/team01-s24-5pm-6/pull/33"}]
+pull_requests: []
