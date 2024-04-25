@@ -18,20 +18,21 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 
-@Tag(name="Details about a location from from https://nominatim.openstreetmap.org/search?q={location}&format=jsonv2")
+@Tag(name="Location info from nominatim.org")
 @RestController
 @RequestMapping("/api/locations")
 public class LocationController {
+    
     
     ObjectMapper mapper = new ObjectMapper();
 
     @Autowired
     LocationQueryService locationQueryService;
 
-    @Operation(summary = "Get a description of your location")
+    @Operation(summary = "Get a list of locations that match a given location name", description = "Uses API documented here: https://nominatim.org/release-docs/develop/api/Search/")
     @GetMapping("/get")
     public ResponseEntity<String> getLocations(
-        @Parameter(name="location", example="California") @RequestParam String location
+        @Parameter(name="location", example="name to search, e.g. \'Isla Vista\' or \'Eiffel Tower\'") @RequestParam String location
     ) throws JsonProcessingException {
         String result = locationQueryService.getJSON(location);
         return ResponseEntity.ok().body(result);
