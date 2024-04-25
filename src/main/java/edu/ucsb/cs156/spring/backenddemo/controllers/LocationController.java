@@ -18,7 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 
-@Tag(name="Details abotu a location from from https://nominatim.openstreetmap.org/search?q={location}&format=jsonv2")
+@Tag(name="Details about a location from from https://nominatim.openstreetmap.org/search?q={location}&format=jsonv2")
 @RestController
 @RequestMapping("/api/locations")
 public class LocationController {
